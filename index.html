@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wikipedia Viewer</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+  <div class="flex-container">
+    <svg width="170" height="201">
+        <symbol id="book">
+            <rect id="spine" y="1" rx="20" ry="6"/>
+            <rect id="pages" x="1" rx="20" ry="10"/>
+            <rect id="page-rounding" x="163" y="-3" rx="10" ry="14"/>
+            <rect id="cover" x="19" y="20"/>
+            <rect id="concealer" x="169"/>
+            <line id="flap-line" x1="19" y1="20" x2="19" y2="200"/>
+            <text id="title" x="55" y="120">W</text>
+        </symbol>
+
+        <use xlink:href="#book"/>   
+        <rect id="tooltip">
+          <title>Open Random Page</title>
+        </rect>
+    </svg>
+    
+    <form>
+      <input type="text" name="searchbox" id="searchbox" placeholder="What are you looking for?">
+      <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+    </form>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

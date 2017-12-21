@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Lora");
+
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #ebedee;
+}
+
+.flex-container{
+    height: 80vH;
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+svg{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+svg:hover {
+    filter: drop-shadow(-12px 12px 7px rgba(0,0,0,0.5));  
+}
+
+form{
+    align-self: stretch;
+}
+
+#searchbox{
+  width: 50%;
+  height: 1.5rem;
+  margin-top: 3rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  outline: none;
+  padding: 2px 10px;
+}
+
+i{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+i:hover{
+    transform: scale(1.5);
+}
+
+.result{
+    width: 70%;
+    margin-top: 2rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0.2rem 1rem;
+    text-align: left;
+    font-family: Lora;
+    background-color: white;
+    transition: 0.3s;
+    position:relative;
+}
+
+.result:hover{
+    box-shadow: -5px 5px 7px rgba(0,0,0,0.8);
+    transform: scale(1.02);
+}
+
+.link-span{
+  position: absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 1.5;
+    line-height: 70%;
+}
+
+/* SVG Book */
+#spine{
+    width: 26px;
+    height: 199px;
+    fill: rgb(142, 76, 0);
+    stroke: black;
+    stroke-width: 0.5;
+}
+
+#pages{
+    width: 200px;
+    height: 20px;
+    fill: rgb(255, 199, 135);
+    stroke: black;
+    stroke-width: 0.8; 
+}
+
+#page-rounding{
+    width: 170px;
+    height: 26px;
+    fill: #ebedee;
+    stroke: black;
+    stroke-width: 0.8;
+}
+
+#cover{
+    width: 150px;
+    height: 180px;
+    fill: rgb(142, 76, 0);
+    stroke: black;
+    stroke-width: 0.5; 
+}
+
+#concealer{
+    width: 10px;
+    height: 23px;
+    fill: #ebedee;
+}
+
+#flap-line{
+    stroke: black;
+    stroke-width: 2; 
+}
+
+#title{
+    fill: black;
+    font-family: Crimson Text;
+    font-size: 70px;
+}
+
+#tooltip{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
